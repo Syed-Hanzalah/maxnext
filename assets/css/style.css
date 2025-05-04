@@ -1,0 +1,320 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.outer {
+    width: 660px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    padding: 20px 30px;
+
+}
+
+
+.para2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #6C757D;
+}
+
+.drag {
+    background-color: #F6F6F6;
+    border: 3px dotted #CCCCCC;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.file {
+    height: 115px;
+    margin-bottom: 10px;
+}
+
+.drag-file {
+    font-size: 20px;
+    color: #008060;
+}
+
+.btn-choose {
+    background-color: #008060;
+    border: 1px solid #008060 !important;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.btn-choose svg path {
+    transition: 0.3s ease-in-out;
+}
+
+.btn-choose:hover {
+    color: #008060;
+}
+
+.btn-choose:hover svg path {
+    stroke: #008060;
+}
+
+.video {
+    color: #DB0940;
+    font-size: 14px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    color: #202735;
+    padding: 20px;
+    font-weight: 500;
+    font-weight: 18px;
+    gap: 10px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+}
+
+.selected_option .card {
+    border-color: #DB0940;
+    background-color: #FFF0F4;
+}
+
+.selected_option .card svg [stroke="#202735"] {
+    stroke: #DB0940;
+}
+
+.selected_option .card svg [fill="#202735"] {
+    fill: #DB0940;
+}
+
+.card p {
+    padding: 0;
+}
+
+.cal {
+    height: 57px;
+}
+
+.inner {
+    height: 47px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #6C757D;
+    margin: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.select {
+    padding: 20px 0;
+}
+
+.get-nda-link {
+    color: #DB0940;
+    text-decoration: none;
+}
+
+.nda-line {
+    height: 24px;
+    width: 1px;
+    background-image: linear-gradient(to bottom, transparent 0%, #6C757D 50%, transparent 100%);
+}
+
+.note-flex {
+    gap: 7px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    color: #6C757D;
+}
+
+.options-row,
+.select.row {
+    margin: 0 -8px !important;
+}
+
+.options-row>div,
+.select.row>div,
+.options-row>label {
+    padding: 0 8px !important;
+}
+
+.form-inp {
+    padding: 10px;
+    background-color: #F0F0F0 !important;
+    border-radius: 10px;
+    border-color: transparent !important;
+    color: #202735;
+    font-size: 18px;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-choose {
+    padding: 8px 12px !important;
+}
+
+.btn-calculate {
+    padding: 10px 12px !important;
+}
+
+.question-para,.get-more-para {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6C757D;
+}
+
+.question-para a {
+    color: #DB0940;
+    text-decoration: none;
+}
+
+.get-more-para a {
+    color: #008060;
+    text-decoration: underline;
+}
+
+.or{
+    font-size: 13px;
+    position: relative;
+    color: #6C757D;
+}
+
+.or::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    left: calc(50% - 20px);
+    top: 50%;
+    transform: translate(-100%,-50%);
+    background-image: linear-gradient(to left, #6C757D, transparent);
+}
+
+.or::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    right: calc(50% - 20px);
+    top: 50%;
+    transform: translate(100%,-50%);
+    background-image: linear-gradient(to right, #6C757D, transparent);
+}
+
+.card-transaction-img{
+    width: 576px;
+}
+
+.heading-2{
+    color: #202735;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.card-desc{
+    font-size: 16px;
+    color: #6C757D;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+.quote-pill-cont{
+    width: fit-content;
+    margin: 0 auto;
+}
+.quote-label{
+    font-size: 17px;
+    color: #ffffff;
+    background-color: #008060;
+    border-radius: 100px;
+    width: 120px;
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.quote-pill{
+    padding: 8px 32px;
+    border: 1px solid #008060;
+    border-radius: 100px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #008060;
+}
+@media (max-width:500px) {
+    .outer {
+        padding: 6px 15px !important;
+    }
+
+    .note-flex {
+        font-size: 13px !important;
+        margin-bottom: 10px;
+    }
+
+    .note-flex svg {
+        height: 18px;
+        width: 18px;
+    }
+
+    .file{
+        height: 54px;
+    }
+
+    .para2{
+        font-size: 13px;
+    }
+
+    .drag-drop-flex{
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drag-drop-flex p{
+        font-size: 16px;
+    }
+
+    .drag-drop-flex svg{
+        height: 24px;
+        width: 24px;
+    }
+
+    .quote-label{
+        font-size: 14px;
+        width: 105px;
+    }
+
+    .quote-pill{
+        padding: 8px 28px;
+        font-size: 34px;
+    }
+
+    .quote-pill img{
+        height: 40px;
+    }
+
+    .heading-2{
+        font-size: 20px;
+    }
+
+    .card-desc{
+        font-size: 12px;
+    }
+
+    .form-inp{
+        font-size: 16px;
+    }
+
+    .question-para,.get-more-para{
+        font-size: 14px;
+    }
+}
